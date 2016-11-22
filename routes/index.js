@@ -9,10 +9,10 @@ var sentiment = require('retext-sentiment');
 var sentimentData = [];
 
 var twitter = new twit({
-  consumer_key: 'ugZ3qKFYqT3XfyO4fum9jwMSa',
-  consumer_secret: 'I41cAwyekfgQjLY80UioMzwSyqG6mh1CVgtugDta63y1dT8Zf8',
-  access_token_key: '784787507946909700-GPQg79wg6YYa7FuYQiKHaUS926ZrQAD',
-  access_token_secret: 'HoKiYaQNsxnxCSS5CbxB7aDaaFfWLdrEwuCW5acsjrfg0'
+  consumer_key: process.env.TWITTER_CONSUMER_KEY,
+  consumer_secret: process.env.TWITTER_CONSUMER_KEY,
+  access_token_key: process.env.TWITTER_CONSUMER_KEY,
+  access_token_secret: process.env.TWITTER_CONSUMER_KEY.
 });
 
 router.get('/tweets/:q', function(req, res, next) {

@@ -12,7 +12,7 @@ var twitter = new twit({
   consumer_key: process.env.TWITTER_CONSUMER_KEY,
   consumer_secret: process.env.TWITTER_CONSUMER_KEY,
   access_token_key: process.env.TWITTER_CONSUMER_KEY,
-  access_token_secret: process.env.TWITTER_CONSUMER_KEY.
+  access_token_secret: process.env.TWITTER_CONSUMER_KEY
 });
 
 router.get('/tweets/:q', function(req, res, next) {
